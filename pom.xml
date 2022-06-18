@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.yingchengpeng.mall</groupId>
+    <artifactId>simple-mall</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>mall-item</module>
+        <module>mall-user</module>
+        <module>mall-gateway-rpc</module>
+        <module>mall-config</module>
+        <module>mall-starter</module>
+        <module>mall-dependency-impl</module>
+        <module>mall-common</module>
+        <module>mall-dependency</module>
+        <module>mall-price</module>
+        <module>mall-inventory</module>
+        <module>mall-promotion</module>
+        <module>mall-trade</module>
+        <module>mall-pay</module>
+        <module>mall-settle</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 内部模块 -->
+            <!-- 公共模块 -->
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-gateway-rpc</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-config</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-dependency</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-dependency-impl</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+
+            <!-- 用户模块 -->
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-user</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 商品模块 -->
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-item</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
