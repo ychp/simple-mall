@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>mall-item</artifactId>
+        <artifactId>simple-mall</artifactId>
         <groupId>com.yingchengpeng.mall</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mall-item-gateway-rpc</artifactId>
-    <version>${mall.item.rpc.version}</version>
+    <artifactId>mall-shop</artifactId>
+    <version>${mall.shop.version}</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

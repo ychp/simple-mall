@@ -10,6 +10,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>mall-user</artifactId>
+    <version>${mall.user.version}</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>mall-user-biz</module>
+        <module>mall-user-domain</module>
+        <module>mall-user-infrastructure</module>
+        <module>mall-user-gateway-rpc</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

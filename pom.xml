@@ -28,12 +28,29 @@
         <module>mall-trade</module>
         <module>mall-pay</module>
         <module>mall-settle</module>
+        <module>mall-shop</module>
     </modules>
 
     <properties>
         <java.version>1.8</java.version>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+
+        <mall.version>1.0-SNAPSHOT</mall.version>
+        <mall.common.version>1.0-SNAPSHOT</mall.common.version>
+        <mall.dependency.version>1.0-SNAPSHOT</mall.dependency.version>
+        <mall.gateway.rpc.version>1.0-SNAPSHOT</mall.gateway.rpc.version>
+        <mall.user.version>1.0-SNAPSHOT</mall.user.version>
+        <mall.user.rpc.version>1.0-SNAPSHOT</mall.user.rpc.version>
+        <mall.shop.version>1.0-SNAPSHOT</mall.shop.version>
+        <mall.item.version>1.0-SNAPSHOT</mall.item.version>
+        <mall.item.rpc.version>1.0-SNAPSHOT</mall.item.rpc.version>
+        <mall.inventory.version>1.0-SNAPSHOT</mall.inventory.version>
+        <mall.price.version>1.0-SNAPSHOT</mall.price.version>
+        <mall.promotion.version>1.0-SNAPSHOT</mall.promotion.version>
+        <mall.trade.version>1.0-SNAPSHOT</mall.trade.version>
+        <mall.pay.version>1.0-SNAPSHOT</mall.pay.version>
+        <mall.settle.version>1.0-SNAPSHOT</mall.settle.version>
     </properties>
 
     <dependencyManagement>
@@ -43,27 +60,27 @@
             <dependency>
                 <groupId>com.yingchengpeng.mall</groupId>
                 <artifactId>mall-gateway-rpc</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${mall.gateway.rpc.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.yingchengpeng.mall</groupId>
                 <artifactId>mall-config</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${mall.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.yingchengpeng.mall</groupId>
                 <artifactId>mall-dependency</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${mall.dependency.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.yingchengpeng.mall</groupId>
                 <artifactId>mall-dependency-impl</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${mall.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.yingchengpeng.mall</groupId>
                 <artifactId>mall-common</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${mall.common.version}</version>
             </dependency>
 
 
@@ -71,14 +88,103 @@
             <dependency>
                 <groupId>com.yingchengpeng.mall</groupId>
                 <artifactId>mall-user</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${mall.user.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-user-biz</artifactId>
+                <version>${mall.user.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-user-domain</artifactId>
+                <version>${mall.user.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-user-gateway-rpc</artifactId>
+                <version>${mall.user.rpc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-user-infrastructure</artifactId>
+                <version>${mall.user.version}</version>
+            </dependency>
+
+            <!-- 店铺模块 -->
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-shop</artifactId>
+                <version>${mall.shop.version}</version>
             </dependency>
 
             <!-- 商品模块 -->
             <dependency>
                 <groupId>com.yingchengpeng.mall</groupId>
                 <artifactId>mall-item</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${mall.item.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-item-biz</artifactId>
+                <version>${mall.item.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-item-domain</artifactId>
+                <version>${mall.item.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-item-infrastructure</artifactId>
+                <version>${mall.item.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-item-gateway-rpc</artifactId>
+                <version>${mall.item.rpc.version}</version>
+            </dependency>
+
+            <!-- 价格模块 -->
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-price</artifactId>
+                <version>${mall.price.version}</version>
+            </dependency>
+
+            <!-- 库存模块 -->
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-inventory</artifactId>
+                <version>${mall.inventory.version}</version>
+            </dependency>
+
+            <!-- 营销模块 -->
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-promotion</artifactId>
+                <version>${mall.promotion.version}</version>
+            </dependency>
+
+            <!-- 交易模块 -->
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-trade</artifactId>
+                <version>${mall.trade.version}</version>
+            </dependency>
+
+            <!-- 支付模块 -->
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-pay</artifactId>
+                <version>${mall.pay.version}</version>
+            </dependency>
+
+            <!-- 结算模块 -->
+            <dependency>
+                <groupId>com.yingchengpeng.mall</groupId>
+                <artifactId>mall-settle</artifactId>
+                <version>${mall.settle.version}</version>
             </dependency>
 
 

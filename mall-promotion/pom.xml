@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>mall-promotion</artifactId>
+    <version>${mall.promotion.version}</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
