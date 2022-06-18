@@ -30,3 +30,7 @@ nbdist/
 
 ### log ###
 logs/
+
+
+### config ###
+application-dev.yaml

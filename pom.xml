@@ -53,6 +53,20 @@
         <mall.settle.version>1.0-SNAPSHOT</mall.settle.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.2.11</version>
+        </dependency>
+    </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <!-- 内部模块 -->
@@ -187,6 +201,12 @@
                 <version>${mall.settle.version}</version>
             </dependency>
 
+            <!-- 持久化 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.47</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

@@ -1,0 +1,8 @@
+logging:
+  file: /Users/yingchengpeng/logs/simple-mall/root.log
+  path: /Users/yingchengpeng/logs/simple-mall
+
+MYSQL_HOST: rm-bp182hx4i632qrcaeko.mysql.rds.aliyuncs.com
+MYSQL_PORT: ???
+MYSQL_USERNAME: ???
+MYSQL_PASSWORD: ????
