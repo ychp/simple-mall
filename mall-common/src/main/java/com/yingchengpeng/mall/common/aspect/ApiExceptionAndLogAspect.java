@@ -36,7 +36,7 @@ import java.util.Set;
 public class ApiExceptionAndLogAspect {
 
     /**
-     * 切dubbo接口
+     * 切rpc接口
      */
     @Pointcut("execution(public * com.yingchengpeng.mall..gateway.rpc.service.impl.*.*(..))")
     public void apiPointcut() {
